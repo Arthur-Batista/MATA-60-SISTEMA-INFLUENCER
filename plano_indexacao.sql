@@ -1,6 +1,5 @@
 /**************************************************************
 * SCRIPT DDL - PLANO DE INDEXAÇÃO (OTIMIZAÇÃO)
-* Prefixo: IDX_ (conforme MAD1)
 **************************************************************/
 
 CREATE INDEX IDX_THCAMPANHA_MARCA ON TH_CAMPANHA (ID_MARCA);
@@ -17,6 +16,7 @@ WHERE ST_STATUS <> 'Concluida';
 CREATE INDEX IDX_THMETRICA_NRSEGUIDORES ON TH_METRICA (nr_seguidores);
 CREATE INDEX IDX_THMETRICA_COLETA ON TH_METRICA (DT_COLETA);
 CREATE INDEX IDX_RLCONTRATO_VALOR ON RL_CONTRATO (VL_TOTAL DESC);
+
 
 
 
